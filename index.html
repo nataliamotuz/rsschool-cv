@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Natallia Motuz's CV</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Natallia Motuz</h1>
+    <p>Junior Software Engineer</p>
+  </header>
+  <main>
+    <section>
+      <div>
+        <img src="" alt="">
+        <div>
+          <h2>I'm <span>Natallia Motuz</span></h2>
+          <h3>Junior Software Engineer</h3>
+          <ul>
+            <li>Adress: Minsk, Belarus</li>
+            <li>Email: natalia.motuz@gmail.com</li>
+            <li>Telegram: @natalkamotuz</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Summary of Qualifications</h2>
+      <div>
+        <p>I am in the earlier stage of my journey as a software developer, have a small yet delightful portfolio of launched projects, and I am hungry to learn more.</p>
+      </div>
+      <h2>Technical skills</h2>
+      <div>
+        <p>
+          As a junior developer, I am able to craft clean and correct code with some
+          supervision and guidance. Also I can execute on well specified or documented tasks by breaking them down into
+          reasonable subtasks, and complete
+          them.
+        </p>
+        <ul>
+          <li><span>HTML</span><progress value="8" max="10">HTML</progress></li>
+          <li><span>CSS</span><progress value="7" max="10">CSS</progress></li>
+          <li><span>JavaScript</span><progress value="2" max="10">JavaScript</progress></li>
+          <li><span>ReactJS</span><progress value="1" max="10">ReactJS</progress></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Code Example</h2>
+
+      <pre><code>
+    module.exports = function solveEquation(equation) {
+      const parsedEquation = equation.split(' ');
+      const op1 = parsedEquation[3];
+      const op2 = parsedEquation[7];
+      const a = parsedEquation[0];
+      const b = parsedEquation[4] * (op1 === '-' ? - 1 :1 );
+      const c = parsedEquation[8] * (op2 === '-' ? - 1 :1 );
+      const D = Math.sqrt(b * b - 4 * a * c);
+      const x1 = Math.round((-b + D) / (2 * a));
+      const x2 = Math.round((-b - D) / (2 * a));
+  
+      return [x1, x2].sort(function (a, b) {return a - b};
+    }; 
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div>
+        <ul>
+          <li>2008-2010 MA in Belarusian Linguistics, University of Warsaw, Poland</li>
+          <li>2008-2010 BA in Visual Cultural Studies, University of Warsaw, Poland</li>
+          <li>2003-2006 Belarusian State Pedagogical University, Belarusian Linguistics</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Informal Education</h2>
+      <div>
+        <p>Basics of Computer Science, IT-Academy, 2017</p>
+        <p>Website development using HTML, CSS & Javascript, IT-Academy, 2020</p>
+        <p>Online courses: Basic course in Java programming, The Basics of Object Oriented Programming, Database, Regular
+          expressions.</p>
+      </div>
+    </section>
+
+<section>
+  <h2>English skills</h2>
+  <div>
+    <p>I have successfully completed a 160-hours General English course at the
+      Intermediate level in Streamline Language School.</p>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
