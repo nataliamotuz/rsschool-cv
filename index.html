@@ -6,105 +6,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Natallia Motuz's CV</title>
-
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1>Natallia Motuz</h1>
-    <p>Junior Software Engineer</p>
+    <p><b>Junior Software Engineer</b></p>
   </header>
+
   <main>
-    <section>
-      <div>
-        <img src="" alt="">
-        <div>
-          <h2>I'm <span>Natallia Motuz</span></h2>
-          <h3>Junior Software Engineer</h3>
+    <section class="contacts">
+      <div class="container content-center">
+        <div class="contacts-content">
+          <img class="cv-foto" src="/assets/natalia.motuz.png" alt="Natallia Motuz's foto">
+          <div class="bio">
+            <p>I'm <span>Natallia Motuz</span></p>
+            <h3>Junior Software Engineer</h3>
+            <ul class="contact-list">
+              <li>Adress: Minsk, Belarus</li>
+              <li>Email: natalia.motuz@gmail.com</li>
+              <li>Telegram: @natalkamotuz</li>
+            </ul>
+            <ul class="social-networks">
+              <li><a class="fab fa-facebook-f fa-2x" href="//facebook.com" target="_blank"></a></li>
+              <li><a class="fab fa-twitter fa-2x" href="//twitter.com" target="_blank"></a></li>
+              <li><a class="fab fa-instagram fa-2x" href="//instagram.com" target="_blank"></a></li>
+              <li><a class="fab fa-github-alt fa-2x" href="//github.com" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qualifications">
+      <div class="container">
+        <div class="qualifications-content">
+          <h2>Summary of Qualifications</h2>
+          <p>I am in the earlier stage of my journey as a software developer, have a small yet delightful
+            portfolio of launched projects, and I am hungry to learn more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="technical-skills">
+      <div class="container">
+        <div class="technical-skills-content">
+          <h2>Technical skills</h2>
+          <div class="content">
+            <p>
+              As a junior developer, I am able to craft clean and correct code with some
+              supervision and guidance. Also I can execute on well specified or documented tasks by breaking them down
+              into
+              reasonable subtasks, and complete
+              them.
+            </p>
+            <div class="skills-list">
+              <ul>
+                <li><span>HTML</span><progress value="8" max="10">HTML</progress></li>
+                <li><span>CSS</span><progress value="7" max="10">CSS</progress></li>
+                <li><span>JavaScript</span><progress value="2" max="10">JavaScript</progress></li>
+                <li><span>ReactJS</span><progress value="1" max="10">ReactJS</progress></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="code">
+      <div class="container">
+        <div class="code-example-content">
+          <h2>Code Example</h2>
+          <pre><code>
+        module.exports = function solveEquation(equation) {
+          const parsedEquation = equation.split(' ');
+          const op1 = parsedEquation[3];
+          const op2 = parsedEquation[7];
+          const a = parsedEquation[0];
+          const b = parsedEquation[4] * (op1 === '-' ? - 1 :1 );
+          const c = parsedEquation[8] * (op2 === '-' ? - 1 :1 );
+          const D = Math.sqrt(b * b - 4 * a * c);
+          const x1 = Math.round((-b + D) / (2 * a));
+          const x2 = Math.round((-b - D) / (2 * a));
+      
+          return [x1, x2].sort(function (a, b) {return a - b};
+        }; 
+          </code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="education">
+      <div class="container">
+        <div class="education-content">
+          <h2>Education</h2>
           <ul>
-            <li>Adress: Minsk, Belarus</li>
-            <li>Email: natalia.motuz@gmail.com</li>
-            <li>Telegram: @natalkamotuz</li>
+            <li>2008-2010 MA in Belarusian Linguistics, University of Warsaw, Poland</li>
+            <li>2008-2010 BA in Visual Cultural Studies, University of Warsaw, Poland</li>
+            <li>2003-2006 Belarusian State Pedagogical University, Belarusian Linguistics</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Summary of Qualifications</h2>
-      <div>
-        <p>I am in the earlier stage of my journey as a software developer, have a small yet delightful portfolio of launched projects, and I am hungry to learn more.</p>
-      </div>
-      <h2>Technical skills</h2>
-      <div>
-        <p>
-          As a junior developer, I am able to craft clean and correct code with some
-          supervision and guidance. Also I can execute on well specified or documented tasks by breaking them down into
-          reasonable subtasks, and complete
-          them.
-        </p>
-        <ul>
-          <li><span>HTML</span><progress value="8" max="10">HTML</progress></li>
-          <li><span>CSS</span><progress value="7" max="10">CSS</progress></li>
-          <li><span>JavaScript</span><progress value="2" max="10">JavaScript</progress></li>
-          <li><span>ReactJS</span><progress value="1" max="10">ReactJS</progress></li>
-        </ul>
+    <section class="informal-education">
+      <div class="container">
+        <div class="informal-education-content">
+          <h2>Informal Education</h2>
+          <div>
+            <p>Basics of Computer Science, IT-Academy, 2017</p>
+            <p>Website development using HTML, CSS & Javascript, IT-Academy, 2020</p>
+            <p>Online courses: Basic course in Java programming, The Basics of Object Oriented Programming, Database,
+              Regular
+              expressions.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Code Example</h2>
-
-      <pre><code>
-    module.exports = function solveEquation(equation) {
-      const parsedEquation = equation.split(' ');
-      const op1 = parsedEquation[3];
-      const op2 = parsedEquation[7];
-      const a = parsedEquation[0];
-      const b = parsedEquation[4] * (op1 === '-' ? - 1 :1 );
-      const c = parsedEquation[8] * (op2 === '-' ? - 1 :1 );
-      const D = Math.sqrt(b * b - 4 * a * c);
-      const x1 = Math.round((-b + D) / (2 * a));
-      const x2 = Math.round((-b - D) / (2 * a));
-  
-      return [x1, x2].sort(function (a, b) {return a - b};
-    }; 
-      </code></pre>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <div>
-        <ul>
-          <li>2008-2010 MA in Belarusian Linguistics, University of Warsaw, Poland</li>
-          <li>2008-2010 BA in Visual Cultural Studies, University of Warsaw, Poland</li>
-          <li>2003-2006 Belarusian State Pedagogical University, Belarusian Linguistics</li>
-        </ul>
+    <section class="english">
+      <div class="container">
+        <div class="english-content">
+          <h2>English skills</h2>
+          <p>I have successfully completed a 160-hours General English course at the
+            Intermediate level in Streamline Language School.</p>
+        </div>
       </div>
     </section>
-
-    <section>
-      <h2>Informal Education</h2>
-      <div>
-        <p>Basics of Computer Science, IT-Academy, 2017</p>
-        <p>Website development using HTML, CSS & Javascript, IT-Academy, 2020</p>
-        <p>Online courses: Basic course in Java programming, The Basics of Object Oriented Programming, Database, Regular
-          expressions.</p>
-      </div>
-    </section>
-
-<section>
-  <h2>English skills</h2>
-  <div>
-    <p>I have successfully completed a 160-hours General English course at the
-      Intermediate level in Streamline Language School.</p>
-  </div>
-</section>
-
   </main>
-
-  <footer>
-    
+  <footer class="footer">
+    <a href="https://github.com/nataliamotuz">© Natallia Motuz, 2021</a>
   </footer>
 </body>
 
