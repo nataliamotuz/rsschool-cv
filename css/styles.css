@@ -141,6 +141,28 @@ h3 {
   font-size: 20px;
 }
 
+/* SECTION CODE */
+
+.CODE {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.code-example-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+pre {
+  background: #fff;
+  width: 790px;
+  padding: 40px;
+  font-size: 20px;
+  margin: 0;
+}
+
 /* SECTION  QUALIFICATION*/
 
 .qualifications {
