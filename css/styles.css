@@ -46,11 +46,9 @@ h1 {
 
 .contacts-content {
   display: flex;
-  flex-direction: row;
   align-items: center;
   background: #fff;
   width: 870px;
-  text-align: justify;
   font-size: 20px;
 }
 
@@ -126,7 +124,6 @@ h3 {
 .technical-skills-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -143,16 +140,9 @@ h3 {
 
 /* SECTION CODE */
 
-.CODE {
+.content-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.code-example-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 pre {
@@ -163,12 +153,18 @@ pre {
   margin: 0;
 }
 
-/* SECTION  QUALIFICATION*/
-
-.qualifications {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.code-example-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.skills-list li {
+  list-style-type: none;
+}
+
+/* SECTION  QUALIFICATION*/
 
 .container {
   max-width: 1024px;
@@ -201,36 +197,11 @@ h2 {
   padding-bottom: 10px;
 }
 
-/* SECTION  CODE*/
-
-.education {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.code-example-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-list li {
-  list-style-type: none;
-
-}
-
 /* SECTION  EDUCATION*/
-
-.education {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 .education-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -249,15 +220,9 @@ h2 {
 
 /* SECTION  INFORMAL EDUCATION*/
 
-.informal-education {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .informal-education-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -279,7 +244,6 @@ h2 {
 .english-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
